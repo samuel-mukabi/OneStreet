@@ -47,7 +47,9 @@ h2 {
 h3 {
     @apply font-playfair text-2xl font-bold tracking-tighter text-foreground;
 }
-
+h4 {
+    @apply text-4xl font-bold tracking-tighter text-white;
+}
 h5 {
     @apply text-base font-normal text-secondary tracking-wide;
 }
@@ -69,6 +71,10 @@ h6 {
 }
 .tag {
     @apply px-2 py-1 rounded-md bg-accent text-secondary text-xs font-medium uppercase;
+}
+
+.tag-btn-active {
+    @apply px-4 py-2 rounded-md bg-foreground text-white text-xs font-medium cursor-pointer;
 }
 
 .btn-tertiary {

@@ -2,6 +2,7 @@ import Image from "next/image";
 import {BedSingle, Scan} from "lucide-react";
 
 export interface Property {
+    id: number;
     image: string;
     tag: string;
     price: number;

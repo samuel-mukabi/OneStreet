@@ -21,7 +21,7 @@ const Page = () => {
                         <button
                             key={tag}
                             onClick={() => setActive(tag)}
-                            className={`btn-secondary capitalize ${active === tag ? 'bg-primary text-white' : ''}`}
+                            className={`btn-secondary capitalize ${active === tag ? 'tag-btn-active' : ''}`}
                         >
                             {tag}
                         </button>
@@ -33,9 +33,9 @@ const Page = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6">
                     {propertiesData
                         .filter(property => active === 'all' || property.tag === active)
-                        .map((property, index) => (
-                            <Link href={`/properties/${index}`} key={index}>
-                                <CardDesign key={index} property={property}/>
+                        .map((property) => (
+                            <Link href={`/properties/${property.id}`} key={property.id}>
+                                <CardDesign property={property}/>
                             </Link>
                         ))}
                 </div>

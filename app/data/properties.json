@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "tag": "penthouse",
+    "price": 45000000,
+    "name": "The Royal Heights",
+    "location": "Kilimani, Nairobi",
+    "rooms": 4,
+    "size": 350
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+    "tag": "villa",
+    "price": 75000000,
+    "name": "Serene Valley Villa",
+    "location": "Karen, Nairobi",
+    "rooms": 5,
+    "size": 600
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9",
+    "tag": "townhouse",
+    "price": 32000000,
+    "name": "Maple Court",
+    "location": "Lavington, Nairobi",
+    "rooms": 3,
+    "size": 280
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1512918766671-ed6a07be3573",
+    "tag": "waterfront",
+    "price": 120000000,
+    "name": "Ocean View Residency",
+    "location": "Nyali, Mombasa",
+    "rooms": 6,
+    "size": 800
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+    "tag": "brownstone",
+    "price": 55000000,
+    "name": "Heritage Row",
+    "location": "Upper Hill, Nairobi",
+    "rooms": 4,
+    "size": 400
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+    "tag": "condo",
+    "price": 18000000,
+    "name": "Skyline Apartments",
+    "location": "Westlands, Nairobi",
+    "rooms": 2,
+    "size": 150
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
+    "tag": "penthouse",
+    "price": 60000000,
+    "name": "Azure Sky Penthouse",
+    "location": "Kileleshwa, Nairobi",
+    "rooms": 4,
+    "size": 420
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+    "tag": "villa",
+    "price": 85000000,
+    "name": "Golden Gates Villa",
+    "location": "Runda, Nairobi",
+    "rooms": 6,
+    "size": 750
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+    "tag": "townhouse",
+    "price": 28000000,
+    "name": "Greenwood Terraces",
+    "location": "Syokimau, Machakos",
+    "rooms": 4,
+    "size": 220
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
+    "tag": "waterfront",
+    "price": 95000000,
+    "name": "Coral Reef Estates",
+    "location": "Diani, Kwale",
+    "rooms": 5,
+    "size": 550
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+    "tag": "brownstone",
+    "price": 48000000,
+    "name": "Classic Brick Manor",
+    "location": "Parklands, Nairobi",
+    "rooms": 3,
+    "size": 320
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00",
+    "tag": "condo",
+    "price": 12000000,
+    "name": "Nova Urban Living",
+    "location": "Kilimani, Nairobi",
+    "rooms": 1,
+    "size": 85
+  },
+  {
+    "id": 13,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+    "tag": "penthouse",
+    "price": 52000000,
+    "name": "Elite View Residences",
+    "location": "Westlands, Nairobi",
+    "rooms": 3,
+    "size": 310
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227",
+    "tag": "villa",
+    "price": 150000000,
+    "name": "Majestic Palms",
+    "location": "Muthaiga, Nairobi",
+    "rooms": 7,
+    "size": 1200
+  },
+  {
+    "id": 15,
+    "image": "https://images.unsplash.com/photo-1605146767201-d292552558ed",
+    "tag": "townhouse",
+    "price": 35000000,
+    "name": "Olive Grove Gardens",
+    "location": "Kiambu Road, Nairobi",
+    "rooms": 4,
+    "size": 300
+  },
+  {
+    "id": 16,
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739",
+    "tag": "waterfront",
+    "price": 110000000,
+    "name": "Blue Horizon Villa",
+    "location": "Watamu, Kilifi",
+    "rooms": 5,
+    "size": 680
+  },
+  {
+    "id": 17,
+    "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607",
+    "tag": "brownstone",
+    "price": 42000000,
+    "name": "The Old English Court",
+    "location": "Upper Hill, Nairobi",
+    "rooms": 4,
+    "size": 380
+  },
+  {
+    "id": 18,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "tag": "condo",
+    "price": 22000000,
+    "name": "Silver Oak Condos",
+    "location": "Lavington, Nairobi",
+    "rooms": 3,
+    "size": 180
+  },
+  {
+    "id": 19,
+    "image": "https://images.unsplash.com/photo-1600607687940-c52af036999c",
+    "tag": "penthouse",
+    "price": 48000000,
+    "name": "Summit View Suites",
+    "location": "Nairobi CBD",
+    "rooms": 3,
+    "size": 290
+  },
+  {
+    "id": 20,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
+    "tag": "villa",
+    "price": 68000000,
+    "name": "Savannah Breeze",
+    "location": "Langata, Nairobi",
+    "rooms": 4,
+    "size": 500
+  }
+]
