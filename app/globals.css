@@ -78,7 +78,7 @@ h6 {
 }
 
 .btn-tertiary {
-    @apply px-4 py-2 text-accent text-xs cursor-pointer;
+    @apply text-accent text-sm cursor-pointer;
 }
 hr {
     @apply border-black/20 h-0.5;

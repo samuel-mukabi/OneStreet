@@ -41,12 +41,12 @@ const PropertyPage = () => {
                                 {property.name}
                             </h1>
                             <div className="flex items-center gap-2 text-white/90 mt-4">
-                                <MapPin size={20} className="text-accent" />
+                                <MapPin size={20} className="text-white" />
                                 <span className="text-lg">{property.location}</span>
                             </div>
                         </div>
-                        <div className="">
-                            <p className="text-accent/70 text-sm uppercase tracking-wider mb-1">Price</p>
+                        <div className="bg-primary/90 p-4 rounded-lg">
+                            <p className="text-white text-sm uppercase tracking-wider mb-1">Price</p>
                             <h4 className="">Ksh {property.price.toLocaleString()}</h4>
                         </div>
                     </div>
@@ -78,18 +78,11 @@ const PropertyPage = () => {
                     <div>
                         <h2 className="mb-6">Description</h2>
                         <div className="text-muted space-y-4 leading-relaxed">
-                            <p>
-                                Experience unparalleled luxury in this stunning {property.tag} located in the heart of {property.location}.
-                                This property offers a unique blend of modern sophistication and timeless elegance, designed to provide the ultimate living experience.
-                            </p>
-                            <p>
-                                Featuring {property.rooms} spacious rooms and a total area of {property.size} m², every inch of this home has been
-                                meticulously crafted with high-end finishes and attention to detail. Large windows flood the space with natural light,
-                                while the open-plan layout creates a seamless flow between indoor and outdoor living areas.
-                            </p>
-                            <p>
-                                Residents of {property.name} also enjoy easy access to top-tier amenities, shopping centers, and prestigious schools in the {property.location.split(',')[0]} area.
-                            </p>
+                            {property.description.split('\n').map((paragraph, index) => (
+                                <p key={index}>
+                                    {paragraph}
+                                </p>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -98,7 +91,7 @@ const PropertyPage = () => {
                 <div className="lg:col-span-1">
                     <div className="bg-white p-8 rounded-xl shadow-lg border border-border sticky top-24">
                         <h3 className="mb-6">Interested?</h3>
-                        <p className="text-muted mb-8">Schedule a viewing or get more details about this property today.</p>
+                        <p className="text-foreground mb-8">Schedule a viewing or get more details about this property today.</p>
                         
                         <div className="space-y-4 mb-8">
                             <button className="w-full btn-primary py-4 text-sm flex-center gap-2">

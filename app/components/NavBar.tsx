@@ -19,7 +19,7 @@ const NavBar = () => {
                 </div>
                 <div className="flex-between gap-8">
                     <h6 className="cursor-pointer">+(254)-742479092</h6>
-                    <button className="btn-primary">Schedule Viewing</button>
+                    <Link href={'/contact'} className="btn-primary">Schedule Viewing</Link>
                 </div>
             </div>
         </nav>
