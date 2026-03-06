@@ -41,6 +41,12 @@ h3, h4, h5, h6, p, a, span, button, input, textarea {
 h1 {
     @apply font-playfair text-8xl font-bold tracking-tighter text-white;
 }
+h2 {
+    @apply font-playfair text-4xl font-medium tracking-tighter text-foreground;
+}
+h3 {
+    @apply font-playfair text-2xl font-bold tracking-tighter text-foreground;
+}
 
 h5 {
     @apply text-base font-normal text-secondary tracking-wide;
@@ -61,7 +67,13 @@ h6 {
 .btn-secondary {
     @apply px-4 py-2 rounded-md bg-secondary text-primary text-xs font-medium cursor-pointer;
 }
+.tag {
+    @apply px-2 py-1 rounded-md bg-accent text-secondary text-xs font-medium uppercase;
+}
 
 .btn-tertiary {
     @apply px-4 py-2 text-accent text-xs cursor-pointer;
+}
+hr {
+    @apply border-black/20 h-0.5;
 }
