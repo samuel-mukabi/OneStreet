@@ -10,13 +10,13 @@ const Page = () => {
     const [active, setActive] = useState('all')
 
     return (
-        <div className='min-h-dvh w-screen'>
-            <div className='h-30 flex justify-center flex-col max-w-7xl mx-auto'>
-                <h2 className="text-2xl">Properties</h2>
+        <div className='min-h-dvh w-full px-4'>
+            <div className='py-12 flex justify-center flex-col max-w-7xl mx-auto'>
+                <h2 className="text-2xl md:text-3xl">Properties</h2>
             </div>
             <div>
                 <hr/>
-                <div className="flex justify-between items-center gap-4 h-15 w-1/3 ml-46">
+                <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 py-4 max-w-7xl mx-auto">
                     {tags.map((tag) => (
                         <button
                             key={tag}

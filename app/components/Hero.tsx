@@ -12,12 +12,12 @@ const Hero = () => {
                        className={'object-cover'}
                        priority/>
             </div>
-            <div className="absolute inset-0 z-20 flex items-center top-1/12 flex-col space-y-10 max-w-4xl mx-auto text-center">
-                <h1>Extraordinary Homes for Extraordinary Lives</h1>
-                <h5 className='max-w-2xl'>Discover an unparalleled collection of luxury properties curated by Kenya&#39;s most trusted real estate firm.</h5>
-                <div className="flex-between max-w-2xl gap-10">
-                    <Link href='/' className="btn-primary">View Properties</Link>
-                    <Link href='/' className="btn-secondary">Contact Us</Link>
+            <div className="absolute inset-0 z-20 flex-center -top-1/2 pt-20 flex-col space-y-10 max-w-4xl mx-auto text-center px-4">
+                <h1 className="text-4xl md:text-8xl">Extraordinary Homes for Extraordinary Lives</h1>
+                <h5 className='max-w-2xl text-sm md:text-base'>Discover an unparalleled collection of luxury properties curated by Kenya&#39;s most trusted real estate firm.</h5>
+                <div className="flex-center flex-col sm:flex-row gap-4 sm:gap-10 w-full sm:w-auto">
+                    <Link href='/properties' className="btn-primary w-full sm:w-auto text-center">View Properties</Link>
+                    <Link href='/contact' className="btn-secondary w-full sm:w-auto text-center">Contact Us</Link>
                 </div>
             </div>
         </div>

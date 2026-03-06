@@ -5,8 +5,8 @@ import {ArrowRight} from "lucide-react";
 
 const Featured = () => {
     return (
-        <section className='max-w-7xl mx-auto py-20 flex flex-col space-y-5 h-180'>
-            <div className='flex-between flex-row mb-15'>
+        <section className='max-w-7xl mx-auto py-20 flex flex-col space-y-5 px-4'>
+            <div className='flex justify-between items-center mb-10'>
                 <h2 className="text-2xl">Featured Properties</h2>
                 <div className="flex-between gap-2 group">
                     <Link href={'/properties'} className="btn-tertiary">View All</Link>

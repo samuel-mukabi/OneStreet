@@ -24,7 +24,7 @@ const PropertyPage = () => {
     return (
         <div className="min-h-screen pb-20">
             {/* Hero Image Section */}
-            <div className="relative h-[60vh] w-full">
+            <div className="relative min-h-[50vh] md:h-[60vh] w-full">
                 <Image
                     src={property.image}
                     alt={property.name}
@@ -33,11 +33,11 @@ const PropertyPage = () => {
                     priority
                 />
                 <div className="absolute inset-0 bg-black/30" />
-                <div className="absolute bottom-10 left-0 w-full">
-                    <div className="max-w-7xl mx-auto px-4 flex justify-between items-end">
+                <div className="absolute bottom-10 left-0 w-full px-4">
+                    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                         <div>
                             <span className="tag mb-4 inline-block">{property.tag}</span>
-                            <h1 className="text-5xl md:text-7xl text-white! leading-tight">
+                            <h1 className="text-4xl md:text-7xl text-white! leading-tight">
                                 {property.name}
                             </h1>
                             <div className="flex items-center gap-2 text-white/90 mt-4">
@@ -45,7 +45,7 @@ const PropertyPage = () => {
                                 <span className="text-lg">{property.location}</span>
                             </div>
                         </div>
-                        <div className="bg-primary/90 p-4 rounded-lg">
+                        <div className="bg-primary/90 p-4 rounded-lg w-full md:w-auto text-center md:text-left">
                             <p className="text-white text-sm uppercase tracking-wider mb-1">Price</p>
                             <h4 className="">Ksh {property.price.toLocaleString()}</h4>
                         </div>
@@ -57,7 +57,7 @@ const PropertyPage = () => {
             <div className="max-w-7xl mx-auto px-4 mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div className="lg:col-span-2 space-y-10">
                     {/* Features/Stats */}
-                    <div className="flex gap-10 border-b border-border pb-8">
+                    <div className="flex flex-wrap gap-10 border-b border-border pb-8">
                         <div className="flex flex-col gap-1">
                             <span className="text-muted text-xs uppercase font-medium">Bedrooms</span>
                             <div className="flex items-center gap-2">
