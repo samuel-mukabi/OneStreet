@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+    --color-background: hsl(40 33% 97%);
+    --color-foreground: hsl(175 20% 14%);
+    --color-primary: hsl(175 40% 20%);
+    --color-accent: hsl(38 65% 50%);
+    --color-secondary: hsl(40 20% 94%);
+    --color-muted: hsl(175 8% 46%);
+    --color-border: hsl(40 15% 90%);
+
+    --font-playfair: var(--font-playfair);
+    --font-dm-sans: var(--font-dm-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3, h4, h5, h6, p, a, span, button, input, textarea {
+    @apply font-dm-sans;
+}
+
+.links {
+    @apply uppercase text-foreground hover:text-accent transition-colors duration-250;
+}
+
+h1 {
+    @apply font-playfair text-8xl font-bold tracking-tighter text-white;
+}
+
+h5 {
+    @apply text-base font-normal text-secondary tracking-wide;
+}
+
+h6 {
+    @apply text-xs text-foreground;
+}
+
+.logo {
+    @apply font-playfair tracking-tighter text-xl;
+}
+
+.btn-primary {
+    @apply px-4 py-2 rounded-md bg-primary text-white text-xs font-medium cursor-pointer;
+}
+
+.btn-secondary {
+    @apply px-4 py-2 rounded-md bg-secondary text-primary text-xs font-medium cursor-pointer;
+}
+
+.btn-tertiary {
+    @apply px-4 py-2 text-accent text-xs cursor-pointer;
 }
