@@ -30,7 +30,7 @@ const Services = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div className="space-y-8">
                     <h2 className="text-4xl md:text-5xl leading-tight">Comprehensive Real Estate Solutions</h2>
-                    <p className="text-muted text-lg">
+                    <p className="text-muted text-base">
                         OneStreet is more than just an agency; we are your end-to-end partner in luxury living. 
                         Whether you are looking to invest, relocate, or manage your assets, our team delivers world-class service.
                     </p>

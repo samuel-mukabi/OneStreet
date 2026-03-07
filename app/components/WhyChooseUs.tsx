@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="py-32 bg-white/70">
+        <section className="py-20 bg-white/70">
             <div className="max-w-7xl mx-auto px-4 space-y-15">
                 <div className="space-y-4 max-w-2xl">
                     <span className="text-accent font-bold tracking-widest uppercase text-sm">Why Choose Us</span>
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
                 </div>
 
                 <div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border overflow-hidden rounded-2xl border border-border">
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border overflow-hidden rounded-md border border-border">
                     {features.map((feature, index) => (
                         <div key={index}
                              className="p-12 bg-white hover:bg-white/50 transition-all duration-300 group">

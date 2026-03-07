@@ -36,7 +36,7 @@ const NavBar = () => {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="lg:hidden text-foreground p-2"
+                    className="lg:hidden text-foreground"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -58,7 +58,7 @@ const NavBar = () => {
                             <Link
                                 href={nav.href}
                                 key={nav.label}
-                                className="text-xl font-medium tracking-tight hover:text-accent transition-colors"
+                                className="text-base font-medium tracking-tight"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {nav.label}
@@ -68,7 +68,7 @@ const NavBar = () => {
                     <div className="mt-auto space-y-6">
                         <div className="space-y-2">
                             <p className="text-xs text-muted uppercase tracking-widest font-bold">Inquiries</p>
-                            <p className="text-lg font-bold">+(254) 742 479 092</p>
+                            <p className="text-base font-bold">+(254) 742 479 092</p>
                         </div>
                         <Link
                             href="/contact"

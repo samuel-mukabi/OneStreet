@@ -24,7 +24,7 @@ const PropertyPage = () => {
     return (
         <div className="min-h-screen pb-20">
             {/* Hero Image Section */}
-            <div className="relative min-h-[50vh] md:h-[60vh] w-full">
+            <div className="relative min-h-[70vh] md:h-[60vh] w-full">
                 <Image
                     src={property.image}
                     alt={property.name}
@@ -37,17 +37,16 @@ const PropertyPage = () => {
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                         <div>
                             <span className="tag mb-4 inline-block">{property.tag}</span>
-                            <h1 className="text-4xl md:text-7xl text-white! leading-tight">
+                            <h1 className="text-4xl! md:text-7xl! text-white! leading-tight">
                                 {property.name}
                             </h1>
                             <div className="flex items-center gap-2 text-white/90 mt-4">
                                 <MapPin size={20} className="text-white" />
-                                <span className="text-lg">{property.location}</span>
+                                <span className="text-base">{property.location}</span>
                             </div>
                         </div>
-                        <div className="bg-primary/90 p-4 rounded-lg w-full md:w-auto text-center md:text-left">
-                            <p className="text-white text-sm uppercase tracking-wider mb-1">Price</p>
-                            <h4 className="">Ksh {property.price.toLocaleString()}</h4>
+                        <div className="bg-foreground p-4 rounded-md max-w-10/12 md:w-auto text-center md:text-left">
+                            <h4 className="text-xl! md:text-4xl!">Ksh {property.price.toLocaleString()}</h4>
                         </div>
                     </div>
                 </div>
