@@ -37,9 +37,9 @@ const AboutPage = () => {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-primary/50 z-10"/>
+                <div className="absolute inset-0 bg-black/50 z-10"/>
                 <div className="relative z-20 text-center space-y-4 max-w-4xl">
-                    <h1 className="text-4xl md:text-8xl text-white!">Our Story</h1>
+                    <h1 className="text-4xl! md:text-8xl! text-white!">Our Story</h1>
                     <p className="text-secondary max-w-2xl mx-auto text-base md:text-lg">
                         Redefining the standard of luxury living in Nairobi since 2015.
                     </p>
@@ -79,7 +79,7 @@ const AboutPage = () => {
             </section>
 
             {/* Core Values Section */}
-            <section className="py-32 bg-white/70">
+            <section className="py-20 bg-white/70">
                 <div className="max-w-7xl mx-auto px-4 space-y-15">
                     <div className="space-y-4 max-w-2xl">
                         <span className="text-accent font-bold tracking-widest uppercase text-sm">Our Philosophy</span>

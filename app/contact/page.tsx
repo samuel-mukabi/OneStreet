@@ -35,7 +35,7 @@ const ContactPage = () => {
             {/* Header Section */}
             <section className="bg-primary pt-32 pb-20 px-4">
                 <div className="max-w-7xl mx-auto text-center space-y-4">
-                    <h1 className="text-4xl md:text-8xl text-white!">Contact Our Experts</h1>
+                    <h1 className="text-4xl! md:text-8xl! text-white!">Contact Our Experts</h1>
                     <p className="text-secondary/80 max-w-2xl mx-auto text-base md:text-lg">
                         Whether you are looking to buy, sell, or invest, our specialized team is 
                         ready to provide you with personalized assistance.
@@ -114,7 +114,7 @@ const ContactPage = () => {
                                         </div>
                                         <div>
                                             <p className="font-bold text-sm text-foreground uppercase tracking-wider">{item.title}</p>
-                                            <p className="text-foreground">{item.details}</p>
+                                            <p className="text-foreground text-sm">{item.details}</p>
                                             <p className="text-xs text-muted">{item.sub}</p>
                                         </div>
                                     </div>
