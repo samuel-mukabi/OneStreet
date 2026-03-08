@@ -6,7 +6,7 @@ import Link from "next/link";
 import {useState} from "react";
 
 const Page = () => {
-    const tags = ['all', 'luxury villa', 'penthouse', 'villa', 'townhouse', 'waterfront', 'brownstone', 'condo']
+    const tags = ['all', 'luxury villa']
     const [active, setActive] = useState('all')
 
     return (
