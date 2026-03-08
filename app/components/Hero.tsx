@@ -6,7 +6,7 @@ const Hero = () => {
         <div className='h-[calc(100vh-5rem)] relative overflow-hidden'>
             <div className="absolute inset-0">
                 <div className="absolute inset-0 bg-black/50 z-10"></div>
-                <Image src={'/image/Real Estate Picture.jpg'}
+                <Image src={'/image/Bungalow House Landscape.jpg'}
                        alt={'Real Estate Picture.jpg'}
                        fill
                        className={'object-cover'}
