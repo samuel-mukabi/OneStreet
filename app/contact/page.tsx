@@ -36,7 +36,7 @@ const ContactPage = () => {
             <section className="bg-primary pt-32 pb-20 px-4">
                 <div className="max-w-7xl mx-auto text-center space-y-4">
                     <h1 className="text-4xl! md:text-8xl! text-white!">Contact Our Experts</h1>
-                    <p className="text-secondary/80 max-w-2xl mx-auto text-base md:text-lg">
+                    <p className="text-secondary! max-w-2xl mx-auto text-base md:text-lg">
                         Whether you are looking to buy, sell, or invest, our specialized team is 
                         ready to provide you with personalized assistance.
                     </p>
@@ -125,7 +125,7 @@ const ContactPage = () => {
                         {/* Social Links Placeholder */}
                         <div className="bg-foreground rounded-lg p-8 text-white text-center space-y-4">
                             <h2 className="text-white! text-xl">Follow Our Journey</h2>
-                            <p className="text-secondary/80 text-sm">Join our community on social media for the latest property listings and real estate insights.</p>
+                            <p className="text-secondary! text-sm">Join our community on social media for the latest property listings and real estate insights.</p>
                             <div className="flex justify-center gap-4 pt-2">
                                 <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-white/20 transition-colors border border-white/20">
                                     <span className="text-xs font-bold">IG</span>

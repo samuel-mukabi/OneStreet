@@ -33,6 +33,9 @@ html, body {
 h3, h4, h5, h6, p, a, span, button, input, textarea {
     @apply font-dm-sans;
 }
+p {
+    @apply text-foreground/80;
+}
 
 .links {
     @apply uppercase text-foreground hover:text-accent transition-colors duration-250;

@@ -40,7 +40,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-black/50 z-10"/>
                 <div className="relative z-20 text-center space-y-4 max-w-4xl">
                     <h1 className="text-4xl! md:text-8xl! text-white!">Our Story</h1>
-                    <p className="text-secondary max-w-2xl mx-auto text-base md:text-lg">
+                    <p className="text-secondary! max-w-2xl mx-auto text-base md:text-lg">
                         Redefining the standard of luxury living in Nairobi since 2015.
                     </p>
                 </div>
