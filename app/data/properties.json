@@ -1,8 +1,9 @@
 [
   {
     "id": 1,
-    "image": "/house_1/photos/living room.jpg",
+    "image": "/house_1/photos/outdoor.jpg",
     "gallery": [
+      "/house_1/photos/outdoor.jpg",
       "/house_1/photos/living room.jpg",
       "/house_1/photos/dining.jpg",
       "/house_1/photos/kitchen.jpg",
@@ -24,7 +25,6 @@
       "/house_1/photos/general washroom.jpg",
       "/house_1/photos/laundry.jpg",
       "/house_1/photos/master walkin.jpg",
-      "/house_1/photos/outdoor.jpg",
       "/house_1/photos/pantry 2.jpg",
       "/house_1/photos/pantry.jpg",
       "/house_1/photos/stairs up.jpg",
@@ -38,6 +38,7 @@
     "name": "The Royal Heights",
     "location": "Runda, Nairobi",
     "rooms": 4,
+    "baths": 5,
     "size": "1/2 Acre",
     "description": "Set on a lush half-acre in the prestigious Runda neighborhood, this elegant double-storey 4-bedroom all en-suite home offers generous space, comfort, and privacy—ideal for refined family living in a serene and secure environment.\n\nThe home features a bright lounge and dining area, a spacious kitchen with pantry and store, and a versatile family room perfect for relaxed evenings. There is also a study/playroom, making it ideal for families working or studying from home. Upstairs, a veranda provides a peaceful outdoor extension overlooking the garden, while the outdoor patio offers the perfect setting for entertaining.\n\nAdditional highlights include a garden room, DSQ for two, solar water heating, a shared 25 KVA generator for backup power, and electric fencing for enhanced security. \n\n Perfect for those seeking space, privacy, and a premium Runda lifestyle.\n\n",
     "features": [
@@ -59,6 +60,11 @@
       "2 Months Rent Deposit",
       "1 Month Rent in Advance",
       "Minimum 2-Year Lease"
-    ]
+    ],
+    "contact": {
+      "email": "realtyonestreet@gmail.com",
+      "phone": "+254 719213874",
+      "address": "123 Main St, Nairobi, Kenya"
+    }
   }
 ]

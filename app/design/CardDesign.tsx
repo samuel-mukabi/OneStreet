@@ -12,6 +12,7 @@ export interface Property {
     location: string;
     rooms: number;
     size: string;
+    baths: number;
     description: string;
 }
 
