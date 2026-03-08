@@ -5,11 +5,13 @@ export interface Property {
     id: number;
     image: string;
     tag: string;
+    currency: string;
     price: number;
+    rate: string;
     name: string;
     location: string;
     rooms: number;
-    size: number;
+    size: string;
     description: string;
 }
 
@@ -34,11 +36,11 @@ const CardDesign = ({property}: { property: Property }) => {
                     <p className="text-gray-500 text-sm">{property.location}</p>
                 </div>
                 <div className="mt-2 flex-between">
-                    <span className="text-accent font-bold">Ksh {property.price.toLocaleString()}</span>
+                    <span className="text-accent font-bold">{property.currency} {property.price.toLocaleString()} /{property.rate}</span>
                     <div className="text-gray-600 text-xs flex-between gap-1">
                         <span className="flex-between gap-1"><BedSingle size={16}/> {property.rooms} Rooms</span>
                         .
-                        <span className="flex-between gap-1"><Scan size={16}/> {property.size} m²</span>
+                        <span className="flex-between gap-1"><Scan size={16}/> {property.size}</span>
                     </div>
                 </div>
             </div>

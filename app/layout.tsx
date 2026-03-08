@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair, DM_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/app/components/NavBar";
+import React from "react";
 
 const playfair = Playfair({
   variable: "--font-playfair",
