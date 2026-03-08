@@ -29,7 +29,7 @@ const NavBar = () => {
                 <div className="hidden lg:flex items-center gap-8">
                     <div className="flex items-center gap-2">
                         <Phone size={14} className="text-accent" />
-                        <h6 className="cursor-pointer font-bold">+(254) 742 479 092</h6>
+                        <Link href={`tel:0719213874`} className="cursor-pointer font-bold text-sm!">+(254) 719 213 874</Link>
                     </div>
                     <Link href={'/contact'} className="btn-primary">Schedule Viewing</Link>
                 </div>
@@ -68,7 +68,7 @@ const NavBar = () => {
                     <div className="mt-auto space-y-6">
                         <div className="space-y-2">
                             <p className="text-xs text-muted uppercase tracking-widest font-bold">Inquiries</p>
-                            <p className="text-base font-bold">+(254) 742 479 092</p>
+                            <Link href={'tel:0719213874'} className="text-base font-bold">+(254) 719 213 874</Link>
                         </div>
                         <Link
                             href="/contact"

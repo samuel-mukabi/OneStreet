@@ -4,7 +4,7 @@ import {useParams} from 'next/navigation'
 import Image from 'next/image'
 import {useState} from 'react'
 import propertiesData from "@/app/data/properties.json"
-import {BedSingle, Scan, MapPin, Phone, CheckCircle2, X, ChevronLeft, ChevronRight} from "lucide-react"
+import {BedSingle, Scan, MapPin, Phone, CheckCircle2, X, ChevronLeft, ChevronRight, Bath} from "lucide-react"
 import Link from "next/link";
 
 const PropertyPage = () => {
@@ -74,7 +74,7 @@ const PropertyPage = () => {
                 <div className="lg:col-span-2 space-y-10">
                     {/* Features/Stats */}
                     <div className="md:flex-between flex-col md:flex-row space-y-6 border-b border-border pb-8">
-                        <div className="flex flex-wrap">
+                        <div className="flex-center gap-10">
                             <div className="flex flex-col gap-1">
                                 <span className="text-muted text-xs uppercase font-medium">Bedrooms</span>
                                 <div className="flex items-center gap-2">
@@ -82,11 +82,18 @@ const PropertyPage = () => {
                                     <span className="text-xl font-bold">{property.rooms}</span>
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-1 border-l border-border pl-10">
+                            <div className="flex flex-col gap-1">
                                 <span className="text-muted text-xs uppercase font-medium">Area Size</span>
                                 <div className="flex items-center gap-2">
                                     <Scan size={20} className="text-primary"/>
                                     <span className="text-xl font-bold">{property.size}</span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-1">
+                                <span className="text-muted text-xs uppercase font-medium">Baths</span>
+                                <div className="flex items-center gap-2">
+                                    <Bath size={20} className="text-primary"/>
+                                    <span className="text-xl font-bold">{property.baths}</span>
                                 </div>
                             </div>
                         </div>
@@ -116,6 +123,23 @@ const PropertyPage = () => {
                                         <p>{feature}</p>
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Lease Terms */}
+                    {property.terms && (
+                        <div>
+                            <h2 className="mb-6">Lease Terms</h2>
+                            <div className="bg-secondary/50">
+                                <ul className="space-y-3">
+                                    {property.terms.map((term, index) => (
+                                        <li key={index} className="flex items-start gap-3">
+                                            <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0"/>
+                                            <p className="font-medium">{term}</p>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     )}
@@ -193,22 +217,6 @@ const PropertyPage = () => {
                         </div>
                     )}
 
-                    {/* Lease Terms */}
-                    {property.terms && (
-                        <div>
-                            <h2 className="mb-6">Lease Terms</h2>
-                            <div className="bg-secondary/50">
-                                <ul className="space-y-3">
-                                    {property.terms.map((term, index) => (
-                                        <li key={index} className="flex items-start gap-3">
-                                            <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0"/>
-                                            <p className="font-medium">{term}</p>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    )}
                 </div>
 
                 {/* Sidebar / Contact Info */}
@@ -219,13 +227,16 @@ const PropertyPage = () => {
                             today.</p>
 
                         <div className="space-y-4 mb-8">
-                            <button className="w-full btn-primary py-4 text-sm flex-center gap-2">
+                            <Link href={`tel:${property.contact.phone}`} className="w-full btn-primary text-sm flex-center gap-2">
                                 <Phone size={16}/>
                                 Call Agent
-                            </button>
-                            <button className="w-full btn-secondary py-4 text-sm border border-primary/20">
-                                Send Message
-                            </button>
+                            </Link>
+                            <Link
+                                href={`mailto:${property.contact.email}?subject=Inquiry about ${property.name}&body=Hello, I am interested in the property ${property.name}.`}
+                                className="flex-center btn-secondary text-sm border border-primary/20"
+                            >
+                                Send An Email
+                            </Link>
                         </div>
 
                         <div className="pt-8 border-t border-border">
@@ -234,7 +245,7 @@ const PropertyPage = () => {
                                     <span className="text-primary font-bold">OS</span>
                                 </div>
                                 <div>
-                                    <p className="font-bold text-sm">OneStreet Real Estate</p>
+                                    <p className="font-bold text-sm">OneStreet Realty</p>
                                     <p className="text-xs text-muted">Official Listing Agent</p>
                                 </div>
                             </div>

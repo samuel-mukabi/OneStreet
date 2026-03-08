@@ -7,13 +7,13 @@ const ContactPage = () => {
         {
             icon: <Phone size={20} />,
             title: "Phone",
-            details: "+(254) 742479092",
+            details: "+(254) 719 213 874",
             sub: "Mon - Fri, 9am - 6pm"
         },
         {
             icon: <Mail size={20} />,
             title: "Email",
-            details: "concierge@onestreet.com",
+            details: "realtyonestreet@gmail.com",
             sub: "Support 24/7"
         },
         {
