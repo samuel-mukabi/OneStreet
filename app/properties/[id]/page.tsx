@@ -31,7 +31,7 @@ const PropertyPage = () => {
         return (
             <div className="flex-center min-h-[70vh] flex-col gap-4">
                 <h2 className="text-3xl">Property Not Found</h2>
-                <p className="text-muted">The property you are looking for does not exist.</p>
+                <p className="">The property you are looking for does not exist.</p>
                 <Link href="/properties" className="btn-primary">Back to Properties</Link>
             </div>
         )
@@ -51,7 +51,7 @@ const PropertyPage = () => {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-black/30"/>
+                <div className="absolute inset-0 bg-black/40"/>
                 <div className="absolute bottom-10 left-0 w-full px-4">
                     <div
                         className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
@@ -74,30 +74,30 @@ const PropertyPage = () => {
                 <div className="lg:col-span-2 space-y-10">
                     {/* Features/Stats */}
                     <div className="md:flex-between flex-col md:flex-row space-y-6 border-b border-border pb-8">
-                        <div className="flex-center gap-10">
+                        <div className="flex gap-10">
                             <div className="flex flex-col gap-1">
-                                <span className="text-muted text-xs uppercase font-medium">Bedrooms</span>
+                                <span className="text-gold-strong text-xs uppercase font-medium">Bedrooms</span>
                                 <div className="flex items-center gap-2">
-                                    <BedSingle size={20} className="text-primary"/>
-                                    <span className="text-xl font-bold">{property.rooms}</span>
+                                    <BedSingle size={20} className="text-gold/90"/>
+                                    <span className="text-xl font-bold text-gold/90">{property.rooms}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-muted text-xs uppercase font-medium">Area Size</span>
+                                <span className="text-gold-strong text-xs uppercase font-medium">Area Size</span>
                                 <div className="flex items-center gap-2">
-                                    <Scan size={20} className="text-primary"/>
-                                    <span className="text-xl font-bold">{property.size}</span>
+                                    <Scan size={20} className="text-gold/90"/>
+                                    <span className="text-xl font-bold text-gold/90">{property.size}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-muted text-xs uppercase font-medium">Baths</span>
+                                <span className="text-gold-strong text-xs uppercase font-medium">Baths</span>
                                 <div className="flex items-center gap-2">
-                                    <Bath size={20} className="text-primary"/>
-                                    <span className="text-xl font-bold">{property.baths}</span>
+                                    <Bath size={20} className="text-gold/90"/>
+                                    <span className="text-xl font-bold text-gold/90">{property.baths}</span>
                                 </div>
                             </div>
                         </div>
-                        <h4 className="text-primary! text-2xl!">{property.currency} {property.price.toLocaleString()} /{property.rate}</h4>
+                        <h4 className="text-gold! text-2xl!">{property.currency} {property.price.toLocaleString()} /{property.rate}</h4>
                     </div>
 
                     {/* Description */}
@@ -170,7 +170,7 @@ const PropertyPage = () => {
                     {/* Image Modal/Lightbox */}
                     {selectedImageIndex !== null && (
                         <div
-                            className="fixed h-full inset-0 z-50 flex-center bg-black/90"
+                            className="fixed h-full inset-0 z-50 flex-center bg-primary/90"
                             onClick={() => setSelectedImageIndex(null)}
                         >
                             <button
@@ -221,9 +221,9 @@ const PropertyPage = () => {
 
                 {/* Sidebar / Contact Info */}
                 <div className="lg:col-span-1">
-                    <div className="bg-white p-8 rounded-xl shadow-lg border border-border sticky top-24">
-                        <h3 className="mb-6">Interested?</h3>
-                        <p className="text-foreground mb-8">Schedule a viewing or get more details about this property
+                    <div className="bg-linear-to-l from-primary/50 to-primary-light p-8 rounded-md sticky top-24">
+                        <h3 className="text-3xl! mb-6">Interested?</h3>
+                        <p className="mb-8">Schedule a viewing or get more details about this property
                             today.</p>
 
                         <div className="space-y-4 mb-8">
@@ -242,11 +242,11 @@ const PropertyPage = () => {
                         <div className="pt-8 border-t border-border">
                             <div className="flex items-center gap-4">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex-center">
-                                    <span className="text-primary font-bold">OS</span>
+                                    <Image src={'/images/avatar.png'} alt={'avatar'} height={80} width={80}/>
                                 </div>
                                 <div>
                                     <p className="font-bold text-sm">OneStreet Realty</p>
-                                    <p className="text-xs text-muted">Official Listing Agent</p>
+                                    <p className="text-xs text-primary-light">Official Listing Agent</p>
                                 </div>
                             </div>
                         </div>

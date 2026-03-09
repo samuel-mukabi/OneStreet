@@ -25,30 +25,30 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="py-20 bg-white/70">
-            <div className="max-w-7xl mx-auto px-4 space-y-15">
+        <section className="bg-linear-to-l from-primary to-primary-light min-h-200 flex-center flex-col">
+            <div className="max-w-7xl mx-auto px-4 space-y-16 relative z-10">
                 <div className="space-y-4 max-w-2xl">
-                    <span className="text-accent font-bold tracking-widest uppercase text-sm">Why Choose Us</span>
-                    <h2 className="text-4xl md:text-6xl leading-tight">Elevating Your Real Estate Experience</h2>
+                    <span className="text-gold font-bold tracking-widest uppercase text-sm drop-shadow-md">Why Choose Us</span>
+                    <h2 className="text-4xl md:text-6xl leading-tight text-white drop-shadow-xl">Elevating Your Real Estate Experience</h2>
                 </div>
 
-                <div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border overflow-hidden rounded-md border border-border">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {features.map((feature, index) => (
                         <div key={index}
-                             className="p-12 bg-white hover:bg-white/50 transition-all duration-300 group">
+                            className="p-10 glass rounded-2xl hover:bg-white/10 transition-all duration-300 group hover:-translate-y-2 cursor-pointer relative overflow-hidden">
+                            <div className="absolute inset-0 bg-linear-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div
-                                className="text-accent mb-8 transform group-hover:-translate-y-1 transition-transform duration-300">
+                                className="text-gold mb-8 transform group-hover:scale-110 transition-transform duration-300 relative z-10">
                                 {feature.icon}
                             </div>
-                            <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
-                            <p className="text-muted text-sm leading-relaxed">
+                            <h3 className="text-2xl font-bold mb-4 text-highlight/80! relative z-10">{feature.title}</h3>
+                            <p className="text-white/70 text-sm leading-relaxed relative z-10">
                                 {feature.description}
                             </p>
                             <div
-                                className="mt-8 pt-8 border-t border-border opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                className="mt-8 pt-8 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
                                 <span
-                                    className="text-accent text-xs font-bold uppercase tracking-widest">Learn More</span>
+                                    className="text-gold text-xs font-bold uppercase tracking-widest">Learn More</span>
                             </div>
                         </div>
                     ))}

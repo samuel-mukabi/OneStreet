@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 @theme {
-    --color-background: hsl(40 33% 97%);
-    --color-foreground: hsl(175 20% 14%);
-    --color-primary: hsl(175 40% 20%);
-    --color-accent: hsl(38 65% 50%);
-    --color-secondary: hsl(40 20% 94%);
-    --color-muted: hsl(175 8% 46%);
-    --color-border: hsl(40 15% 90%);
 
-    --font-playfair: var(--font-playfair);
-    --font-dm-sans: var(--font-dm-sans);
+    --color-primary: #167171;
+    --color-primary-light: #2A9696;
+    --color-accent: #ADF2F2;
+    --color-highlight: #FFF5AA;
+    --color-gold: #FEDC81;
+    --color-gold-strong: #EBC53A;
+    --color-text-light: #F8FAFC;
+    --color-text-muted: #E2E8F0;
+
+    --font-pgf-now: var(--font-pgf-now);
 }
 
 @utility flex-center {
@@ -24,65 +26,89 @@ html, body {
     align-items: center;
 }
 
+@utility glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 @utility flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-h3, h4, h5, h6, p, a, span, button, input, textarea {
-    @apply font-dm-sans;
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button,
+input,
+textarea {
+    @apply font-pgf-now;
 }
+
 p {
-    @apply text-foreground/80;
+    @apply text-white leading-relaxed font-light tracking-wide;
 }
 
 .links {
-    @apply uppercase text-foreground hover:text-accent transition-colors duration-250;
+    @apply uppercase text-gold hover:text-highlight transition-colors duration-250;
 }
 
 h1 {
-    @apply font-playfair text-8xl font-bold tracking-tighter text-white;
+    @apply font-pgf-now text-8xl font-bold text-white;
 }
+
 h2 {
-    @apply font-playfair text-4xl font-medium tracking-tighter text-foreground;
+    @apply font-pgf-now text-4xl font-medium text-highlight drop-shadow-lg;
 }
+
 h3 {
-    @apply font-playfair text-2xl font-bold tracking-tighter text-foreground;
+    @apply font-pgf-now text-2xl font-bold text-white;
 }
+
 h4 {
-    @apply text-4xl font-bold tracking-tighter text-white;
+    @apply text-4xl font-bold text-white;
 }
+
 h5 {
-    @apply text-base font-normal text-secondary tracking-wide;
+    @apply text-base font-normal text-gold tracking-wide;
 }
 
 h6 {
-    @apply text-xs text-foreground;
+    @apply text-xs text-white;
 }
 
 .logo {
-    @apply font-playfair tracking-tighter text-xl;
+    @apply font-pgf-now text-gold text-xl;
 }
 
 .btn-primary {
-    @apply px-4 py-2 rounded-md bg-primary text-white text-xs font-medium cursor-pointer;
+    @apply px-4 py-2 rounded-md bg-primary text-white text-sm font-medium cursor-pointer hover:bg-gold hover:text-primary transition-colors duration-250;
+}
+.btn-secondary {
+    @apply px-4 py-2 rounded-md bg-gold text-primary text-xs font-medium cursor-pointer;
 }
 
-.btn-secondary {
-    @apply px-4 py-2 rounded-md bg-secondary text-primary text-xs font-medium cursor-pointer;
-}
 .tag {
-    @apply px-2 py-1 rounded-md bg-accent text-secondary text-xs font-medium uppercase;
+    @apply px-3 py-1.5 rounded-md bg-gold text-primary text-xs font-bold uppercase tracking-widest shadow-md;
 }
 
 .tag-btn-active {
-    @apply px-4 py-2 rounded-md bg-foreground text-white text-xs font-medium cursor-pointer;
+    @apply px-4 py-2 rounded-md bg-primary-light text-white text-xs font-medium cursor-pointer;
 }
 
 .btn-tertiary {
-    @apply text-accent text-sm cursor-pointer;
+    @apply text-gold hover:text-gold-strong text-sm cursor-pointer;
 }
+
+
 hr {
-    @apply border-black/20 h-0.5;
+    @apply border-white/20 h-0.5;
 }
