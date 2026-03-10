@@ -37,10 +37,10 @@ const AboutPage = () => {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-primary/50 z-10"/>
+                <div className="absolute inset-0 bg-black/50 z-10"/>
                 <div className="relative z-20 text-center space-y-4 max-w-4xl">
-                    <h1 className="text-4xl! md:text-8xl! text-white!">Our Story</h1>
-                    <p className="text-gold! max-w-2xl mx-auto text-base md:text-lg">
+                    <h1 className="text-4xl! md:text-8xl! text-gold!">Our Story</h1>
+                    <p className="text-white! max-w-2xl mx-auto text-base md:text-lg">
                         Redefining the standard of luxury living in Nairobi since 2015.
                     </p>
                 </div>
@@ -88,7 +88,7 @@ const AboutPage = () => {
                     </div>
 
                     <div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border overflow-hidden rounded-2xl border border-border">
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border overflow-hidden rounded-2xl border border-accent/20">
                         {values.map((value, index) => (
                             <div key={index}
                                  className="p-12 glass hover:bg-white/10 transition-all duration-300 group">
@@ -101,7 +101,7 @@ const AboutPage = () => {
                                     {value.desc}
                                 </p>
                                 <div
-                                    className="mt-8 pt-8 border-t border-border opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    className="mt-8 pt-8 border-t border-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <span
                                         className="text-highlight text-xs font-bold uppercase tracking-widest">Read More</span>
                                 </div>

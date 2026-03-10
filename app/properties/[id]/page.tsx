@@ -73,7 +73,7 @@ const PropertyPage = () => {
             <div className="max-w-7xl mx-auto px-4 mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div className="lg:col-span-2 space-y-10">
                     {/* Features/Stats */}
-                    <div className="md:flex-between flex-col md:flex-row space-y-6 border-b border-border pb-8">
+                    <div className="md:flex-between flex-col md:flex-row space-y-6 border-b border-accent/20 pb-8">
                         <div className="flex gap-10">
                             <div className="flex flex-col gap-1">
                                 <span className="text-gold-strong text-xs uppercase font-medium">Bedrooms</span>
@@ -119,7 +119,7 @@ const PropertyPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {property.features.map((feature, index) => (
                                     <div key={index} className="flex items-center gap-3">
-                                        <CheckCircle2 size={18} className="text-primary shrink-0"/>
+                                        <CheckCircle2 size={18} className="text-gold shrink-0"/>
                                         <p>{feature}</p>
                                     </div>
                                 ))}
@@ -134,8 +134,8 @@ const PropertyPage = () => {
                             <div className="bg-secondary/50">
                                 <ul className="space-y-3">
                                     {property.terms.map((term, index) => (
-                                        <li key={index} className="flex items-start gap-3">
-                                            <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0"/>
+                                        <li key={index} className="flex items-center gap-3">
+                                            <div className="h-1.5 w-1.5 rounded-full bg-gold shrink-0"/>
                                             <p className="font-medium">{term}</p>
                                         </li>
                                     ))}
@@ -233,20 +233,20 @@ const PropertyPage = () => {
                             </Link>
                             <Link
                                 href={`mailto:${property.contact.email}?subject=Inquiry about ${property.name}&body=Hello, I am interested in the property ${property.name}.`}
-                                className="flex-center btn-secondary text-sm border border-primary/20"
+                                className="flex-center btn-secondary text-sm border border-accent/20"
                             >
                                 Send An Email
                             </Link>
                         </div>
 
-                        <div className="pt-8 border-t border-border">
+                        <div className="pt-8 border-t border-accent/20">
                             <div className="flex items-center gap-4">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex-center">
-                                    <Image src={'/images/avatar.png'} alt={'avatar'} height={80} width={80}/>
+                                    <Image src={'/images/avatar.png'} alt={'avatar'} height={80} width={80} className='rounded-full'/>
                                 </div>
                                 <div>
-                                    <p className="font-bold text-sm">OneStreet Realty</p>
-                                    <p className="text-xs text-primary-light">Official Listing Agent</p>
+                                    <p className="font-extrabold! text-sm">OneStreet Realty</p>
+                                    <p className="font-medium! text-xs text-primary-light">Official Listing Agent</p>
                                 </div>
                             </div>
                         </div>

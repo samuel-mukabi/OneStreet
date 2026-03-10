@@ -29,6 +29,9 @@ const pgfNow = localFont({
 export const metadata: Metadata = {
   title: "OneStreet | Luxury Real Estate in Nairobi, Kenya",
   description: "Experience the pinnacle of luxury living with OneStreet. We specialize in exclusive properties in Kenya, from the sprawling estates of Karen to the avant-garde penthouses of Westlands. Redefining the standard of luxury real estate in Nairobi since 2015.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

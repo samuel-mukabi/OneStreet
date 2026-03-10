@@ -24,12 +24,12 @@ const NavBar = () => {
 
     return (
         <nav
-            className='bg-linear-to-r from-primary to-primary-light h-20 top-0 z-1000 sticky px-4 border-b border-white/10 shadow-lg text-white'>
+            className='bg-linear-to-r from-primary to-primary-light h-20 top-0 z-1000 sticky px-4 shadow-lg text-white'>
             <div className='max-w-7xl mx-auto h-full flex-between'>
-                <Link href="/" className='logo'>ONESTREET</Link>
+                <Link href="/" className='logo'>Onestreetrealty</Link>
 
                 {/* Desktop Menu */}
-                <div className='hidden lg:flex items-center gap-8 text-xs'>
+                <div className='hidden lg:flex items-center gap-8'>
                     {navLinks.map((nav) => (
                         <Link href={nav.href} key={nav.label} className='links'>{nav.label}</Link>
                     ))}
@@ -38,7 +38,7 @@ const NavBar = () => {
                 <div className="hidden lg:flex items-center gap-8">
                     <div className="flex items-center gap-2">
                         <Phone size={14} className="text-gold"/>
-                        <Link href={`tel:0719213874`} className="cursor-pointer font-bold text-sm!">+(254) 719 213
+                        <Link href={`tel:0719213874`} className="cursor-pointer font-bold text-sm! tracking-widest">+(254) 719 213
                             874</Link>
                     </div>
                     <Link href={'/contact'} className="btn-primary">Schedule Viewing</Link>

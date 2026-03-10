@@ -18,7 +18,7 @@ export interface Property {
 
 const CardDesign = ({property}: { property: Property }) => {
     return (
-        <div className='h-auto w-full rounded-lg overflow-hidden shadow-sm group'>
+        <div className='h-auto w-full rounded-lg overflow-hidden shadow-sm group border-accent/10 border'>
             <div className="relative h-64 w-full">
                 <Image
                     src={property.image}
