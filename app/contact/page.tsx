@@ -46,12 +46,12 @@ const ContactPage = () => {
             <section className="max-w-7xl mx-auto px-4 -mt-10 mb-24">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                     {/* Contact Form */}
-                    <div className="lg:col-span-2 bg-linear-to-r from-primary to-primary-light rounded-md shadow-xl p-8 md:p-12">
+                    <div className="lg:col-span-2 bg-linear-to-l from-primary to-primary-light via-primary/50 rounded-md shadow-xl p-8 md:p-12">
                         <h2 className="text-3xl mb-8">Send us a Message</h2>
                         <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gold-strong">Full Name</label>
+                                    <label className="text-base font-medium text-gold-strong">Full Name</label>
                                     <input
                                         type="text"
                                         placeholder="Samuel Mukabi"
@@ -59,7 +59,7 @@ const ContactPage = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gold-strong">Email Address</label>
+                                    <label className="text-base font-medium text-gold-strong">Email Address</label>
                                     <input
                                         type="email"
                                         placeholder="sam@example.com"
@@ -69,7 +69,7 @@ const ContactPage = () => {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gold-strong">Phone Number</label>
+                                    <label className="text-base font-medium text-gold-strong">Phone Number</label>
                                     <input
                                         type="tel"
                                         placeholder="+254 000 000 000"
@@ -77,8 +77,8 @@ const ContactPage = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gold-strong">Interest</label>
-                                    <select className="w-full px-4 py-3 rounded-lg border text-gold border-accent/20 focus:border-gold outline-none transition-colors bg-linear-to-r from-primary to-primary-light">
+                                    <label className="text-base font-medium text-gold-strong">Interest</label>
+                                    <select className="w-full px-4 py-3 rounded-lg border text-gold border-accent/20 focus:border-gold outline-none transition-colors">
                                         <option>Buying a Property</option>
                                         <option>Selling a Property</option>
                                         <option>Property Management</option>
@@ -88,7 +88,7 @@ const ContactPage = () => {
                                 </div>
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-medium text-gold-strong">Your Message</label>
+                                <label className="text-base font-medium text-gold-strong">Your Message</label>
                                 <textarea
                                     rows={5}
                                     placeholder="Tell us more about what you're looking for..."
@@ -127,17 +127,17 @@ const ContactPage = () => {
                             <h2 className=" text-xl">Follow Our Journey</h2>
                             <p className=" text-sm">Join our community on social media for the latest property listings and real estate insights.</p>
                             <div className="flex justify-center gap-4 pt-2">
-                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-white/20 transition-colors border border-accent/20">
-                                    <span className="text-xs font-bold">IG</span>
+                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-highlight/20 transition-colors border border-accent/20 group hover:-translate-y-1 ease-in-out">
+                                    <span className="text-xs font-bold group-hover:text-highlight">IG</span>
                                 </div>
-                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-white/20 transition-colors border border-accent/20">
-                                    <span className="text-xs font-bold">LI</span>
+                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-highlight/20 transition-colors border border-accent/20 group hover:-translate-y-1 ease-in-out">
+                                    <span className="text-xs font-bold group-hover:text-highlight">LI</span>
                                 </div>
-                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-white/20 transition-colors border border-accent/20">
-                                    <span className="text-xs font-bold">FB</span>
+                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-highlight/20 transition-colors border border-accent/20 group hover:-translate-y-1 ease-in-out">
+                                    <span className="text-xs font-bold group-hover:text-highlight">FB</span>
                                 </div>
-                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-white/20 transition-colors border border-accent/20">
-                                    <span className="text-xs font-bold">X</span>
+                                <div className="h-10 w-10 rounded-full bg-white/10 flex-center cursor-pointer hover:bg-highlight/20 transition-colors border border-accent/20 group hover:-translate-y-1 ease-in-out">
+                                    <span className="text-xs font-bold group-hover:text-highlight">X</span>
                                 </div>
                             </div>
                         </div>

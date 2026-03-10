@@ -30,7 +30,7 @@ const CardDesign = ({property}: { property: Property }) => {
                     {property.tag}
                 </div>
             </div>
-            <div className="p-4 bg-primary-black/70!">
+            <div className="p-4 bg-linear-to-b from-primary to-primary-light via-primary/50">
                 <h3 className="">{property.name}</h3>
                 <div className="flex items-center gap-2">
                     <MapPinned size={16} className="text-highlight"/>
