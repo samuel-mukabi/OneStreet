@@ -21,7 +21,7 @@ const Page = () => {
                         <button
                             key={tag}
                             onClick={() => setActive(tag)}
-                            className={`btn-secondary capitalize ${active === tag ? 'tag-btn-active' : ''}`}
+                            className={`capitalize ${active === tag ? 'tag-btn-active' : 'tag-btn-inactive '}`}
                         >
                             {tag}
                         </button>

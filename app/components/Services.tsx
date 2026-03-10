@@ -43,7 +43,7 @@ const Services = () => {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-accent/10 blur-3xl rounded-full mix-blend-screen pointer-events-none"></div>
                     {services.map((service, index) => (
                         <div key={index} className={`p-8 rounded-3xl glass hover:bg-white/10 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 space-y-5 cursor-pointer flex flex-col justify-start relative z-10 ${index % 2 !== 0 ? 'sm:mt-12' : ''}`}>
-                            <div className="h-14 w-14 rounded-2xl glass flex-center text-gold shadow-inner border border-white/20">
+                            <div className="h-14 w-14 rounded-2xl glass flex-center text-gold shadow-inner border border-accent/20">
                                 {service.icon}
                             </div>
                             <h3 className="text-xl font-bold  text-highlight/80!">{service.title}</h3>

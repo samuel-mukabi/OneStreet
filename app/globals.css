@@ -17,6 +17,7 @@ body {
     --color-text-light: #F8FAFC;
     --color-text-muted: #E2E8F0;
 
+
     --font-pgf-now: var(--font-pgf-now);
 }
 
@@ -30,7 +31,7 @@ body {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    @apply border border-accent/20;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -58,7 +59,7 @@ p {
 }
 
 .links {
-    @apply uppercase text-gold hover:text-highlight transition-colors duration-250;
+    @apply uppercase text-sm text-gold hover:text-highlight transition-colors duration-250;
 }
 
 h1 {
@@ -86,22 +87,25 @@ h6 {
 }
 
 .logo {
-    @apply font-pgf-now text-gold text-xl;
+    @apply font-pgf-now text-gold text-2xl font-extrabold;
 }
 
 .btn-primary {
     @apply px-4 py-2 rounded-md bg-primary text-white text-sm font-medium cursor-pointer hover:bg-gold hover:text-primary transition-colors duration-250;
 }
 .btn-secondary {
-    @apply px-4 py-2 rounded-md bg-gold text-primary text-xs font-medium cursor-pointer;
+    @apply px-4 py-2 rounded-md bg-gold text-primary text-sm font-medium cursor-pointer;
 }
 
 .tag {
     @apply px-3 py-1.5 rounded-md bg-gold text-primary text-xs font-bold uppercase tracking-widest shadow-md;
 }
 
+.tag-btn-inactive {
+    @apply px-4 py-2 rounded-md bg-primary text-white text-sm font-medium cursor-pointer;
+}
 .tag-btn-active {
-    @apply px-4 py-2 rounded-md bg-primary-light text-white text-xs font-medium cursor-pointer;
+    @apply px-4 py-2 rounded-md bg-gold text-primary text-sm font-medium cursor-pointer;
 }
 
 .btn-tertiary {
@@ -110,5 +114,5 @@ h6 {
 
 
 hr {
-    @apply border-white/20 h-0.5;
+    @apply border-accent/20 h-0.5;
 }

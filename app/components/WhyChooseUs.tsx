@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="bg-linear-to-l from-primary to-primary-light min-h-200 flex-center flex-col">
+        <section className="bg-linear-to-l from-primary to-primary-light min-h-200 flex-center flex-col py-24">
             <div className="max-w-7xl mx-auto px-4 space-y-16 relative z-10">
                 <div className="space-y-4 max-w-2xl">
                     <span className="text-gold font-bold tracking-widest uppercase text-sm drop-shadow-md">Why Choose Us</span>
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
                                 {feature.description}
                             </p>
                             <div
-                                className="mt-8 pt-8 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
+                                className="mt-8 pt-8 border-t border-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
                                 <span
                                     className="text-gold text-xs font-bold uppercase tracking-widest">Learn More</span>
                             </div>
